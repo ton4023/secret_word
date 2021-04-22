@@ -5,13 +5,13 @@ lives = 3
 words = ['lisa', 'jennine', 'jisooo', 'rose']
 
 
-def update_clue(secret_word, guess, clue):
+def update_clue(guess, secret_word, clue):
     for i in range(len(secret_word)):
         if guess == secret_word[i]:
             clue[i] = guess
 
-    res = ''.join(clue) == secret_word
-    return res
+    win = ''.join(clue) == secret_word
+    return win
 
 
 while (len(words) > 0) and (lives > 0):
