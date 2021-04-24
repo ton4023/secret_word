@@ -23,7 +23,6 @@ def hint_clue(clue, secret_word):
 
 
 
-
 while (len(words) > 0) and (lives > 0):
     random.shuffle(words)
     secret_word = words.pop()
